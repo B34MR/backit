@@ -95,7 +95,7 @@ def main():
 	# Archive filepath and log file, time stamped.
 	TS = time_stamp()
 	DEST_FP = os.path.join(DEST_DIR, f'archive-{TS}.tar.gz')
-	LOG_FILE = f'log_{TS}.txt'
+	LOG_FILE = os.path.join(DEST_DIR, f'log_{TS}.txt')
 
 	# Print Job info to STDOUT.
 	print(f'[*] Config: {config_name}')
